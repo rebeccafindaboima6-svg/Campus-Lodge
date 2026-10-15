@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room | Campus Lodge SL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">CampusLodgeSL</a>
+        <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="accommodation.html">Services</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <section class="page-banner"><p class="eyebrow">PLAN YOUR STAY</p><h1>Book Your Room</h1><p>Complete the form to send a booking enquiry.</p></section>
+        <section class="section page-width form-layout">
+            <div><p class="eyebrow">BOOKING ENQUIRY</p><h2>Let's find your room</h2><p>Enter your details and preferred accommodation. This demonstration form displays a confirmation but does not submit data to a server.</p><img class="form-image" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=80" alt="Comfortable room"></div>
+            <form class="form-card" id="booking-form">
+                <label for="full-name">Full Name</label><input id="full-name" name="name" type="text" required placeholder="Enter your full name">
+                <label for="email">Email Address</label><input id="email" name="email" type="email" required placeholder="you@example.com">
+                <label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" required placeholder="Enter your phone number">
+                <label for="room-type">Preferred Room</label><select id="room-type" name="room" required><option value="">Choose a room</option><option>Standard Room</option><option>Shared Room</option><option>Private Room</option></select>
+                <label for="arrival-date">Preferred Move-in Date</label><input id="arrival-date" name="arrival" type="date" required>
+                <label for="stay-length">Length of Stay</label><select id="stay-length" name="duration" required><option value="">Select duration</option><option>1 month</option><option>3 months</option><option>6 months</option><option>1 year</option></select>
+                <label for="booking-notes">Additional Information</label><textarea id="booking-notes" name="notes" rows="4" placeholder="Any additional details"></textarea>
+                <button class="button full-button" type="submit">Send Booking Enquiry</button><p class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="page-width footer-content"><a class="logo" href="index.html">CampusLodgeSL</a><p>© 2026 CampusLodgeSL. All rights reserved.</p></div></footer>
+    <script src="main.js"></script>
+</body>
+</html>
